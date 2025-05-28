@@ -3,7 +3,9 @@ project(DrumStudio)
 
 set(CMAKE_CXX_STANDARD 20)
 
-add_executable(DrumStudio src/main.cpp)
+add_executable(DrumStudio src/main.cpp
+        src/Drum/Drum.cpp
+        src/Throw_except/Throw_except.cpp)
 
 include(FetchContent)
 

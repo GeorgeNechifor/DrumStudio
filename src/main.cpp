@@ -1,21 +1,12 @@
 #include "SFML/Audio.hpp"
 #include "SFML/Graphics.hpp"
 #include<iostream>
+#include "../include/Drum/Drum.h"
+
 int main()
 {
-    sf::RenderWindow window(sf::VideoMode({800, 600}), "SFML window");
 
-    while (window.isOpen())
-    {
-        while (const std::optional event = window.pollEvent())
-        {
-            if (event->is<sf::Event::Closed>())
-                window.close();
-        }
+    Drum drum;
+    drum.set_window();
 
-        window.clear();
-
-
-        window.display();
-    }
 }
