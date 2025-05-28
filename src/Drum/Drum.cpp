@@ -11,9 +11,6 @@ void Drum::set_window() {
             std::cerr << "Failed" << std::endl;
         }
         window.setIcon(icon);
-        sf::Text text(FONT, "GEORGE" , 48);
-        text.setFillColor(RED);
-        text.setPosition(sf::Vector2f (100.f , 100.f));
         while (window.isOpen())
         {
             while (const std::optional event = window.pollEvent())
@@ -22,7 +19,6 @@ void Drum::set_window() {
                     window.close();
             }
             window.clear(PRIMARY);
-            window.draw(text);
             window.display();
         }
     }

@@ -14,6 +14,8 @@ private:
     const unsigned int W_WIDTH;
     const unsigned int W_HEIGHT;
     const std::string TITLE;
+private:
+    void window_draw(sf::RenderWindow window);
 public:
     Drum() : W_HEIGHT(800) , W_WIDTH(1200) , TITLE("DrumStudio"){};
     void set_window();
