@@ -2,11 +2,11 @@
 #include "SFML/Graphics.hpp"
 #include<iostream>
 #include "../include/Drum/Drum.h"
+#include "../include/Draw/Draw.hpp"
 
 int main()
 {
 
-    Drum drum;
-    drum.set_window();
+    Draw::draw_window();
 
 }

@@ -4,9 +4,11 @@ project(DrumStudio)
 set(CMAKE_CXX_STANDARD 20)
 
 add_executable(DrumStudio src/main.cpp
-        src/Drum/Drum.cpp
         src/Throw_except/Throw_except.cpp
-        src/Sequencer/Sequencer.cpp)
+        src/Sequencer/Sequencer.cpp
+        src/Pattern/Pattern.cpp
+        src/Step/Step.cpp)
+
 
 include(FetchContent)
 

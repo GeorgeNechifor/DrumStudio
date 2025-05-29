@@ -9,16 +9,9 @@
 #include "../Color/Color.hpp"
 #include "../Font/Font.hpp"
 
-class Drum{
-private:
-    const unsigned int W_WIDTH;
-    const unsigned int W_HEIGHT;
-    const std::string TITLE;
-private:
-    void window_draw(sf::RenderWindow window);
-public:
-    Drum() : W_HEIGHT(800) , W_WIDTH(1200) , TITLE("DrumStudio"){};
-    void set_window();
+class Drum : public sf::Drawable{
+protected:
+    virtual void draw_component(sf::RenderTarget& target , sf::RenderStates states) = 0;
 };
 
 #endif
